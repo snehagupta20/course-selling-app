@@ -21,11 +21,7 @@ const courseSchema = new mongoose.Schema({
             type: String,
             required: true,
         },
-        id: {
-            type: Number,
-            required: true,
-        },
     }],
 });
 
-const Course = mongoose.model("Course", courseSchema);
+export const Course = mongoose.model("Course", courseSchema);
