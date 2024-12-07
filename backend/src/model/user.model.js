@@ -9,12 +9,9 @@ const userSchema = new mongoose.Schema({
         type: Number,
         required: true,
     },
-    interests:[{
-        name: {
-            type: String,
-            required: true,
-        },
-    }],
+    interests:{
+        type : [String],
+    },
     emailId:{
         type: String,
         required: true,
