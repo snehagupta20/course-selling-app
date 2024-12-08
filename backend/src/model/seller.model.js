@@ -21,6 +21,10 @@ const sellerSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    courses : [{
+        type : mongoose.Schema.Types.ObjectId,
+        ref : 'Course',
+    }]
 });
 
 export const Seller = mongoose.model("Seller", sellerSchema);

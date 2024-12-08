@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import { string } from 'zod';
+import { Schema } from 'zod';
 
 const courseSchema = new mongoose.Schema({
     title:{
@@ -26,17 +26,10 @@ const courseSchema = new mongoose.Schema({
         type: Number,
         required: true,
     },
-    tags:{
-        type : [String],
-        required : true,
-        unique: false,
-    },
-    courseId:{
+    tags:[{
         type: String,
-        unique: true,
-        required: false,
-        default: '',
-    }
+    }]
+
 });
 
 export const Course = mongoose.model("Course", courseSchema);

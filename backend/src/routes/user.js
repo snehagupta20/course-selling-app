@@ -3,14 +3,17 @@ import zod from 'zod';
 import { Seller } from '../model/seller.model.js';
 import jwt from 'jsonwebtoken';
 import { User } from '../model/user.model.js';
+import courseRouter from './course.js';
 
 const router = express.Router();
+
+router.use('/course', courseRouter);
 
 // validating input using zod
 const signupBody = zod.object({
     name : zod.string(),
     age : zod.number(),
-    interests : zod.array(zod.string()),
+    interests : zod.array(zod.string()).optional(),
     emailId : zod.string().email().toLowerCase(),
     password: zod.string().min(6, {message : "Minimum of 6 characters are required for a password."}),
 })
