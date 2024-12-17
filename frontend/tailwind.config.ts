@@ -13,7 +13,7 @@ export default {
         "beige": "#fffbf3",
         "mustard-yellow": "#fec56b",
         "light-gray" : "#f2efe7",
-        "light-pink-beige" : "#fffcf7",
+        "light-pink-beige" : "#fefcfb",
       },
     },
   },
