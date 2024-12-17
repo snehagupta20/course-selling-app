@@ -1,5 +1,5 @@
 import Navbar from "@/components/organs/Navbar";
-import "./globals.css";
+import "../globals.css";
 
 export default function RootLayout({
   children,
@@ -15,3 +15,5 @@ export default function RootLayout({
     </html>
   );
 }
+
+

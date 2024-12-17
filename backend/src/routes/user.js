@@ -12,8 +12,8 @@ router.use('/course', courseRouter);
 // validating input using zod
 const signupBody = zod.object({
     name : zod.string(),
-    age : zod.number(),
-    interests : zod.array(zod.string()).optional(),
+    // age : zod.number(),
+    // interests : zod.array(zod.string()).optional(),
     emailId : zod.string().email().toLowerCase(),
     password: zod.string().min(6, {message : "Minimum of 6 characters are required for a password."}),
 })
@@ -44,7 +44,7 @@ router.post('/signup', async (req, res) => {
     // if they do not exists, then add them to the db
     const seller = await User.create({
         name : body.name,
-        age : body.age,
+        // age : body.age,
         interests : body.interests,
         emailId : body.emailId,
         password : body.password,
@@ -66,6 +66,8 @@ router.post('/signup', async (req, res) => {
 
 router.post('/login', async (req, res) => {
     const body = req.body;
+
+    console.log("body : ", body);
 
     // check if user exists
     const userExists = await User.findOne({

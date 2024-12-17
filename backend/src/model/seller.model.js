@@ -5,14 +5,14 @@ const sellerSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    profession:{
-        type: String,
-        required: true,
-    },
-    experience:{
-        type: Number,
-        required: true,
-    },
+    // profession:{
+    //     type: String,
+    //     required: true,
+    // },
+    // experience:{
+    //     type: Number,
+    //     required: true,
+    // },
     emailId:{
         type: String,
         required: true,

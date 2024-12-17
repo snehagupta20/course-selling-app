@@ -32,4 +32,3 @@ export function YellowButton(props : YellowButtonProps){
         <button className={`bg-mustard-yellow px-4 py-2 text-sm ${props.class}`} >{props.children}</button>
     )
 }
-

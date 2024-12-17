@@ -8,3 +8,15 @@ export function MainHeading(props : HeadingProps){
         <h1 className={` font-semibold text-xl ${props.class}`} >{props.children}</h1>
     )
 }
+
+
+interface SubHeadingProps {
+    children : React.ReactNode;
+    class ?: string,
+}
+
+export function SubHeading(props : SubHeadingProps){
+    return(
+        <h2 className={`font-bold text-xl  ${props.class}`} >{props.children}</h2>
+    )
+};

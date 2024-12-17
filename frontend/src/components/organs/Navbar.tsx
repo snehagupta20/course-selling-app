@@ -3,6 +3,7 @@ import logo from "../../public/logo.png";
 import { MainHeading } from "../atoms/Heading";
 import { Navlink } from "../atoms/NavLinks";
 import { GrayButton, TransparentButton } from "../atoms/Button";
+import Link from "next/link";
 
 
 export default function Navbar(){
@@ -18,7 +19,8 @@ export default function Navbar(){
                     <Navlink>About</Navlink>
                     <Navlink>Courses</Navlink>
                     <Navlink>FAQs</Navlink>
-                    <GrayButton class="mr-8 ml-3" >Login / Sigup</GrayButton>
+                    <Link href="\login"><GrayButton class="ml-3" >Login</GrayButton></Link>
+                    <Link href="\signup"><GrayButton class="mr-8 ml-3" >Sigup</GrayButton></Link>
                     <TransparentButton class="mr-2" >Cart</TransparentButton>
                 </ul>
             </div>
