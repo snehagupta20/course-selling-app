@@ -40,12 +40,14 @@ export function CourseCard(props : CourseCardProps){
     return(
         <div>
             <div>
+                {/* thumbnail */}
+            <div>
                 <div>
-                    {/* icon, level, heading  */}
+                    {/* level, heading description */}
                 </div>
-                <div>
+                {/* <div> */}
                     {/* description  */}
-                </div>
+                {/* </div> */}
             </div>
             {/* horizontal line  */}
             <div>

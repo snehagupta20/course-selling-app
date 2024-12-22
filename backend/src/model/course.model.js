@@ -18,6 +18,10 @@ const courseSchema = new mongoose.Schema({
         },
         default: 'https://letsenhance.io/',
     },
+    level:{
+        type: String,
+        default : 'easy',
+    }
     cost:{
         type:Number,
         required: true,

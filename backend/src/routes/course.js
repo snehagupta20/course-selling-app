@@ -89,7 +89,7 @@ router.get('/getcourse', auth , async (req, res) => {
 });
 
 // buyer's
-router.get('/allcourses', auth , async (req,res) => {
+router.get('/allcourses', async (req,res) => {
     const courses = await Course.find();
     console.log(courses);
 

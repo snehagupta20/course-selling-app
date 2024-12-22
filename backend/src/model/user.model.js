@@ -5,13 +5,6 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    // age:{
-    //     type: Number,
-    //     required: true,
-    // },
-    // interests:{
-    //     type : [String],
-    // },
     emailId:{
         type: String,
         required: true,
@@ -24,6 +17,9 @@ const userSchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: "Course",
     }],
+    // courses : [{
+    //     type: string,
+    // }]
 });
 
 export const User = mongoose.model("User", userSchema);
