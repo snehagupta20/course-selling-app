@@ -11,7 +11,7 @@ export function MainHeading(props : HeadingProps){
 
 
 interface SubHeadingProps {
-    children : React.ReactNode;
+    children : React.ReactNode,
     class ?: string,
 }
 
@@ -19,4 +19,14 @@ export function SubHeading(props : SubHeadingProps){
     return(
         <h2 className={`font-bold text-xl  ${props.class}`} >{props.children}</h2>
     )
+};
+
+interface GraySmallHeadingProps {
+    children : React.ReactNode,
+    class ?: string,
+}
+export function GraySmallHeading(props : GraySmallHeadingProps){
+    return(
+        <h6 className={`text-gray-500 ${props.class} `} >{props.children}</h6>
+    );
 };

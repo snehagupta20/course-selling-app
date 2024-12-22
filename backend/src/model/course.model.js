@@ -21,7 +21,7 @@ const courseSchema = new mongoose.Schema({
     level:{
         type: String,
         default : 'easy',
-    }
+    },
     cost:{
         type:Number,
         required: true,

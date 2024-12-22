@@ -16,6 +16,22 @@ const courseBody = zod.object({
     tags : zod.array(zod.string()),
 });
 
+// geting course details from course id
+router.get('/courseDetail', async (req,res) => {
+    const courseId = req.query.id;
+    const courseDetails = await Course.findOne({_id : courseId});
+    if(courseDetails){
+        return res.status(200).json({
+            message : "course details of given id : ",
+            course : courseDetails,
+        });
+    }
+
+    return res.status(404).json({
+        message : "course id not found.",
+    });
+});
+
 // seller's 
 router.post('/addcourse', auth, async (req, res) => {
     const body = req.body;
@@ -136,6 +152,7 @@ router.get('/purchasedcourses', auth, async (req, res) => {
         courseDetail : courseDetail,
     });
 })
+
 
 const courseRouter = router;
 export default courseRouter;

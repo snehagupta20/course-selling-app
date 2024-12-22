@@ -90,7 +90,24 @@ router.post('/login', async (req, res) => {
         message : "Email-id does not exists, please Sign-up"
     })
 
-})
+});
+
+router.get('/getSeller', async (req, res) => {
+    try{    
+        const sellers = await Seller.find();
+        if(sellers){
+            return res.status(200).json({
+                message : "sellers present in db : ",
+                seller : sellers,
+            })
+        }
+    } catch (error){
+        return res.status(411).json({
+            message : "sellers not found in db",
+            error : error,
+        })
+    }
+});
 
 const sellerRouter = router;
 export default sellerRouter;
