@@ -1,11 +1,25 @@
-import IconCodeSlash from "@/public/icons/CodeIcon";
+import React from 'react';
+
 import { CategoryCard } from "../atoms/Card";
 import { MainHeading } from "../atoms/Heading";
+import { TransparentButton } from "../atoms/Button";
+
+import COURSECATEGORY from "../../data/courseCategory.json";
+
 import IconBriefcase from "@/public/icons/BriefCaseIcon";
 import IconPaintbrush from "@/public/icons/PaintBrushIcon";
 import IconGrowth from "@/public/icons/PersonalityDevIcon";
 import IconBxsBriefcase from "@/public/icons/BuisinessNmarkettingIcon";
-import { TransparentButton } from "../atoms/Button";
+import IconCodeSlash from "@/public/icons/CodeIcon";
+
+type IconName = 'IconPaintbrush' | 'IconGrowth' | 'IconBxsBriefcase' | 'IconCodeSlash';
+
+const iconMapping = {
+    IconPaintbrush,
+    IconGrowth,
+    IconBxsBriefcase,
+    IconCodeSlash,
+}
 
 export default function CourseCategory(){
     return(
@@ -16,25 +30,15 @@ export default function CourseCategory(){
 
             </div>
             <div className="grid grid-cols-4 " >
-                <CategoryCard 
-                    icon={<IconCodeSlash />} 
-                    name="Technology & Programming" 
-                />
-                
-                <CategoryCard 
-                    icon={<IconBxsBriefcase />} 
-                    name="Business & Marketing" 
-                />
-                
-                <CategoryCard 
-                    icon={<IconPaintbrush />} 
-                    name="Creative Arts & Design" 
-                />
-                
-                <CategoryCard 
-                    icon={<IconGrowth />} 
-                    name="Personal Development" 
-                />
+
+                {COURSECATEGORY.CourseCategory.map((val) => {
+                    return (
+                        <CategoryCard
+                            icon={React.createElement(iconMapping[val.icon as IconName])}
+                            name={val.name}
+                        />
+                    );
+                })}
             
             </div>
         </div>

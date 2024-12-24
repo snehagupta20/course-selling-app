@@ -1,0 +1,50 @@
+{
+    "CourseCategory": [
+      {
+        "icon": "IconCodeSlash",
+        "name": "Technology & Programming"
+      },
+      {
+        "icon": "IconBxsBriefcase",
+        "name": "Business & Marketing"
+      },
+      {
+        "icon": "IconPaintbrush",
+        "name": "Creative Arts & Design"
+      },
+      {
+        "icon": "IconGrowth",
+        "name": "Personal Development"
+      }
+
+    ],
+
+    "CourseCategoryFull" : [
+      {
+        "icon": "IconMusic4",
+        "name": "Music & Audio"
+      },
+      {
+        "icon": "IconMentalHealthFill",
+        "name": "Health & Wellness"
+      },
+      {
+        "icon": "IconLanguage",
+        "name": "Language Learning"
+      },
+      {
+        "icon": "IconRoamresearch",
+        "name": "Science & Research"
+      },
+      {
+        "icon": "IconCameraReelsFill",
+        "name": "Photography & Videography"
+      },
+      {
+        "icon": "IconFinance",
+        "name": "Finance & Accounting"
+      }
+    ]
+  }
+  
+

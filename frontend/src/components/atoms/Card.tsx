@@ -46,7 +46,7 @@ interface CourseCardFeatureProps {
 }
 export function CourseCardFeature(props : CourseCardFeatureProps){
     return(
-        <div className="flex items-center mb-2 mr-2" >
+        <div className="flex items-center mb-2 mr-5" >
             {/* icon  */}
             <div className={`border border-black rounded-full p-2 mr-2 ${props.class}`} >{props.icon}</div>
             <p>{props.title}</p>
@@ -101,7 +101,7 @@ export function CourseCard(props : CourseCardProps){
                     />
 
                     <CourseCardFeature
-                        class="p-1"
+                        class="p-[0.3rem]"
                         icon={<IconCertificate height="1.5em" width="1.5em" />}
                         title="Certificate"
                     />
