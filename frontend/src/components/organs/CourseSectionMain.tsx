@@ -15,10 +15,16 @@ export default async function CourseSectionMain(){
         cost: number;
         hours: number;
         tags:string[];
-    }
+    };
 
-    let courseId:string[] = [];
-    let course:Course[] = [];
+    interface CourseId{
+        courseId : string,
+        name : string,
+    };
+
+    let courseId:CourseId[] = [];
+    // let course:Course[] = [];
+    let course: Array<{courseDetail : Course, author : string}> = [];
 
 
     async function fetchCourses(){
@@ -27,24 +33,30 @@ export default async function CourseSectionMain(){
 
         for(let i=0;i<sellers.length;i++){
             if(sellers[i].courses.length>0){
-                courseId.push(sellers[i].courses[0]);
+                courseId.push({
+                    name : sellers[i].name,
+                    courseId : sellers[i].courses[0],
+                });
             }
         }
 
         for(let i=0;i<courseId.length;i++){
-            let id = courseId[i];
+            let id = courseId[i].courseId;
 
             let courseDetail = await axios.get(`${BACKEND_URL}/api/v1/seller/course/courseDetail?id=${id}`);
 
-            course.push(courseDetail.data.course);
+            let temp = {
+                courseDetail : courseDetail.data.course,
+                author : courseId[i].name,
+            }
+
+            course.push(temp);
 
             if(course.length == 5) break;
         }
     };
 
     await fetchCourses();
-
-    // console.log(course);
 
     return(
         <section className="bg-light-pink-beige h-[100vh] flex flex-col items-center" >
@@ -53,16 +65,16 @@ export default async function CourseSectionMain(){
             <div className="flex flex-col m-4" >
                 {course.map((val)=>(
                     <CourseCard
-                        thumbnail={val.thumbnail}
-                        title={val.title}
-                        // description={val.description}
-                        description="lorem32"
-                        price={`${val.cost} Rs.`}
-                        hours={`${val.hours} Hours`}
-                        alt="sss"
-                        level={val.level}
-                        author="ss ss ss"
+                        thumbnail={val.courseDetail.thumbnail}
+                        title={val.courseDetail.title}
+                        description={val.courseDetail.description}
+                        price={`${val.courseDetail.cost} Rs.`}
+                        hours={`${val.courseDetail.hours} Hours`}
+                        alt="Thumbnail"
+                        level={val.courseDetail.level}
+                        author={val.author}
                     />
+                    
                 ))}
             </div>
             <YellowButton>See all Courses</YellowButton>
