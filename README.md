@@ -34,12 +34,10 @@ http://localhost:8000/api/v1/user/course/:675445ffc1480d1e4af44c23
         - profession
         - experience
 
-- backend code..
-- take in the input by the user (seller or user)
-    - using usestate to update the user's preference.
-- if user, redirect to user/signup
-- if seller, redirect to seller/signup
+- make login/signup for seller
 
 - when user signus up, ham dono db mei check karenge uski details. if not in user, then in seller. 
 - when signsup, wont ask if he's user ya seller.
 - only if he logs in, tabhi puchenge. 
+
+- when click enter, submit form.

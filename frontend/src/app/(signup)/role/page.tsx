@@ -14,7 +14,11 @@ export default function Role(){
 
     function handleSubmit(event : React.FormEvent<HTMLFormElement>){
         event.preventDefault();
-        router.push(`${selectedButton}/login`);
+        if(selectedButton === "") alert("Please select an option");
+        else{
+            // console.log("router should have : ",selectedButton,"/signup");
+            router.push(`${selectedButton}/signup`); 
+        }
     }
 
     function handleChange(event : React.ChangeEvent<HTMLInputElement>){
