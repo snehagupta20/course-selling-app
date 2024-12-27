@@ -4,7 +4,7 @@ import { YellowButton } from "@/components/atoms/Button";
 import { MainHeading } from "@/components/atoms/Heading";
 import InputBox from "@/components/atoms/InputBox";
 import Link from "next/link";
-import {BACKEND_URL} from "../../config.js";
+import {BACKEND_URL} from "../../../config.js";
 import axios from "axios";
 import { FormEvent } from "react";
 import { useRouter } from "next/navigation";
