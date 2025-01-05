@@ -20,6 +20,9 @@ const userSchema = new mongoose.Schema({
     // courses : [{
     //     type: string,
     // }]
+    // review : [{
+        
+    // }]
 });
 
 export const User = mongoose.model("User", userSchema);

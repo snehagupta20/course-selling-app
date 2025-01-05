@@ -37,3 +37,9 @@ http://localhost:8000/api/v1/user/course/:675445ffc1480d1e4af44c23
 
 - give better courses in db
 
+# life changing reviews
+- allow users to add reviews
+- user array of review
+- another endpoint
+- can add a review of a course 
+- in endpoint, course & review dessc will be geting. 

@@ -1,0 +1,34 @@
+{
+    "ReviewCard": [
+        {
+            "name": "Sneha Gupta",
+            "review": "I was working as a waiter and was always passionate about web design. Because of Good Course, I upskilled myself and am now working as a full-time freelance designer.",
+            "stars": 5
+        },
+        {
+            "name": "Rahul Sharma",
+            "review": "The courses provided are well-structured and easy to follow. I gained practical knowledge and landed my first job in software development.",
+            "stars": 5
+        },
+        {
+            "name": "Anjali Verma",
+            "review": "The learning platform was intuitive and the instructors were very supportive. Thanks to this, I transitioned into a data analyst role.",
+            "stars": 4
+        },
+        {
+            "name": "Amit Patel",
+            "review": "Good Course helped me build a strong foundation in programming. I am now confidently working on complex projects at my company.",
+            "stars": 5
+        },
+        {
+            "name": "Priya Sinha",
+            "review": "The practical assignments and projects really made a difference. I was able to showcase my skills to potential employers and got hired as a front-end developer.",
+            "stars": 5
+        },
+        {
+            "name": "Karan Mehta",
+            "review": "I loved how interactive and engaging the courses were. The mock interviews were especially helpful in cracking my dream job!",
+            "stars": 4
+        }
+    ]
+}

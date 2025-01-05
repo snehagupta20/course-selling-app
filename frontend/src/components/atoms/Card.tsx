@@ -126,3 +126,35 @@ export function TeacherCard(props : TeacherCardProps){
         </div>
     );
 };
+
+interface ReviewCardProps{
+    // src : string,
+    name : string,
+    review : string,
+    stars : number,
+}
+
+export function ReviewCard(props : ReviewCardProps){
+    const maxStars = 5;
+    return(
+        <div className="rounded-xl border-2 border-black flex bg-light-pink-beige p-4 m-4 w-[35rem] h-[14.5rem] " >
+            <div className="rounded-xl m-4 bg-black h-[10rem] w-[10rem]">
+                {/* image  */}
+                {/* <Image src={props.src} alt={props.name} height={100} width={100}></Image> */}
+            </div>
+            <div className="flex flex-col p-4 text-left w-[20rem]">
+                <div className="flex items-center mb-2">
+                    <MainHeading class="mr-3">{props.name}</MainHeading>
+                    {/* star div  */}
+                    <div>
+                        {Array.from({length : maxStars}, (_, index) => (
+                            <span key={index} className={index < props.stars ? " text-yellow-500 " : "" } >★</span>
+                        ))}
+                    </div>
+                </div>
+                <p className="text-sm mb-4">{`"${props.review}`}</p>
+                <hr className="font-bold border border-black" />
+            </div>
+        </div>
+    );
+}; 
