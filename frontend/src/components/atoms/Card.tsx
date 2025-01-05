@@ -105,3 +105,24 @@ export function CourseCard(props : CourseCardProps){
         </div>
     );
 };
+
+interface TeacherCardProps{
+    src:string,
+    alt:string,
+    profession:string,
+    name:string,
+}
+
+export function TeacherCard(props : TeacherCardProps){
+    return(
+        <div className="flex flex-col p-4 m-4" >
+            <div className="" >
+                <Image className="rounded-xl" src={props.src} alt={props.alt} height={300} width={300}/>
+            </div>
+            <div className="m-2 p-4" >
+                <GraySmallHeading>{props.profession}</GraySmallHeading>
+                <SubHeading>{props.name}</SubHeading>
+            </div>
+        </div>
+    );
+};

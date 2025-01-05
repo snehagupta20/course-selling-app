@@ -19,8 +19,8 @@ export default function Navbar(){
                     <Navlink>About</Navlink>
                     <Navlink>Courses</Navlink>
                     <Navlink>FAQs</Navlink>
-                    <Link href="\login"><GrayButton class="ml-3" >Login</GrayButton></Link>
-                    <Link href="\signup"><GrayButton class="mr-8 ml-3" >Sigup</GrayButton></Link>
+                    <Link href="\role"><GrayButton class="mx-4 mr-7" >Login / Signup</GrayButton></Link>
+                    {/* <Link href="\role"><GrayButton class="mr-8 ml-3" >Sigup</GrayButton></Link> */}
                     <TransparentButton class="mr-2" >Cart</TransparentButton>
                 </ul>
             </div>

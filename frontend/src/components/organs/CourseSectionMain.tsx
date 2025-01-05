@@ -74,7 +74,6 @@ export default async function CourseSectionMain(){
                         level={val.courseDetail.level}
                         author={val.author}
                     />
-                    
                 ))}
             </div>
             <YellowButton>See all Courses</YellowButton>

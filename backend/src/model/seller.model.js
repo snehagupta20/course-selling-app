@@ -13,6 +13,10 @@ const sellerSchema = new mongoose.Schema({
         type: Number,
         required: true,
     },
+    profilePic:{
+        type: String,
+        default: "https://github.com/snehagupta20/course-selling-app/blob/main/frontend/src/public/potraits/user%20icon.png",
+    },
     emailId:{
         type: String,
         required: true,

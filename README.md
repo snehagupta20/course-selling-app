@@ -29,15 +29,11 @@ http://localhost:8000/api/v1/user/course/:675445ffc1480d1e4af44c23
 
 # login/;signup
 
-- ask before login/signup, who are you?
-    - seller
-        - profession
-        - experience
-
-- make login/signup for seller
-
-- when user signus up, ham dono db mei check karenge uski details. if not in user, then in seller. 
-- when signsup, wont ask if he's user ya seller.
-- only if he logs in, tabhi puchenge. 
-
 - when click enter, submit form.
+- make role modal better
+- formulate error message ache se.
+
+# courses
+
+- give better courses in db
+

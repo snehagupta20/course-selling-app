@@ -30,3 +30,14 @@ export function GraySmallHeading(props : GraySmallHeadingProps){
         <h6 className={`text-gray-500 ${props.class} `} >{props.children}</h6>
     );
 };
+
+interface RedHeadingProps {
+    children : React.ReactNode,
+    class ?: string,
+}
+export function RedHeading(props : RedHeadingProps){
+    return(
+        <h3 className={`text-red-500 ${props.class} `} >{props.children}</h3>
+    );
+};
+

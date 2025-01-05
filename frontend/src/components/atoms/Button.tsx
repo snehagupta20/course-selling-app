@@ -25,10 +25,12 @@ export function GrayButton(props : GrayButtonProps){
 interface YellowButtonProps {
     children : React.ReactNode,
     class ?: string,
+    onClick ?: React.MouseEventHandler<HTMLButtonElement>
 }
 
 export function YellowButton(props : YellowButtonProps){
     return(
-        <button className={`bg-mustard-yellow px-4 py-2 text-sm ${props.class}`} >{props.children}</button>
+        <button className={`bg-mustard-yellow px-4 py-2 text-sm ${props.class}`} onClick={props.onClick} >{props.children}</button>
     )
 }
+

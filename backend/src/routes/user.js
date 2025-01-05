@@ -67,13 +67,30 @@ router.post('/signup', async (req, res) => {
 router.post('/login', async (req, res) => {
     const body = req.body;
 
-    console.log("body : ", body);
+    // console.log("body : ", body);
 
     // check if user exists
     const userExists = await User.findOne({
         emailId : body.emailId,
-        password : body.password
+        // password : body.password
     });
+
+    if(!userExists){
+        return res.status(411).json({
+            message : "Email-id does not exists, please Sign-up"
+        })
+    }
+
+    const passExsits = await Seller.findOne({
+        emailId : body.emailId,
+        password : body.password,
+    })
+
+    if(!passExsits){ 
+        return res.status(411).json({
+            message : "Incorrect password",
+        });
+    }
 
     // make token
     const emailId = body.emailId;
@@ -81,17 +98,17 @@ router.post('/login', async (req, res) => {
     const token = jwt.sign({emailId, password}, process.env.JWT_SECRET);
 
     // if exist, then send token
-    if(userExists){
-        return res.status(200).json({
-            message : "User logged in successfully!! :)",
-            token : token
-        });
-    }
+    // if(userExists){
+    return res.status(200).json({
+        message : "User logged in successfully!! :)",
+        token : token
+    });
+    // }
 
     // if not exist, send dont exist, and ask to signup
-    return res.status(411).json({
-        message : "Email-id does not exists, please Sign-up"
-    })
+    // return res.status(411).json({
+    //     message : "Email-id does not exists, please Sign-up"
+    // })
 
 })
 
