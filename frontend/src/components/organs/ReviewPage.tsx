@@ -7,7 +7,7 @@ import {IconArrowRight} from "../../public/icons/RightArrowIcon";
 
 export default function ReviewPage(){
     return(
-        <div className="h-[100vh] bg-beige pt-20 mt-4 p-8">
+        <div className="h-[60vh] bg-beige pt-20 mt-4 p-8">
             <div className="flex justify-between">
                 <MainHeading class="text-2xl">Literally Life-Chnaging</MainHeading>
                 <TransparentButton>Explore Courses</TransparentButton>
