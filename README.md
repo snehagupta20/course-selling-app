@@ -43,3 +43,9 @@ http://localhost:8000/api/v1/user/course/:675445ffc1480d1e4af44c23
 - another endpoint
 - can add a review of a course 
 - in endpoint, course & review dessc will be geting. 
+
+
+# acuinity ui or any other
+- scrolling effect, vertical scroll
+- clicking courses, payment, others effect
+- footer template

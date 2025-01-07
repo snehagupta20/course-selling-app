@@ -1,0 +1,128 @@
+{
+    "courses": [
+        {
+            "question": "How do I decide which course is right for me?",
+            "answer": "Consider your interests, career goals, and skill level. Our course descriptions and support team can help."
+        },
+        {
+            "question": "Are the courses beginner-friendly?",
+            "answer": "Yes, many of our courses are designed for beginners. Check the prerequisites on the course page."
+        },
+        {
+            "question": "Do you offer live sessions or pre-recorded videos?",
+            "answer": "We offer both live sessions and pre-recorded videos to suit your learning preference."
+        },
+        {
+            "question": "Can I access the course content after completion?",
+            "answer": "Yes, you will have lifetime access to the course material unless specified otherwise."
+        },
+        {
+            "question": "Are there any prerequisites for advanced courses?",
+            "answer": "Yes, some advanced courses require prior knowledge. Check the prerequisites mentioned in the course details."
+        },
+        {
+            "question": "Do the courses include projects?",
+            "answer": "Yes, most courses include hands-on projects to help you apply your learning."
+        },
+        {
+            "question": "How much time will I need to complete a course?",
+            "answer": "Course durations vary. Each course description mentions an estimated completion time."
+        },
+        {
+            "question": "Can I switch to another course if I made the wrong choice?",
+            "answer": "Yes, you can switch to another course within the first 7 days of enrollment."
+        },
+        {
+            "question": "Do you provide mentorship for courses?",
+            "answer": "Yes, mentorship is available for select courses to guide you through your learning journey."
+        },
+        {
+            "question": "How are the instructors selected for the courses?",
+            "answer": "All instructors are industry experts with extensive experience in their respective fields."
+        }
+    ],
+    "payment": [
+        {
+            "question": "What payment methods do you accept?",
+            "answer": "We accept credit/debit cards, UPI, net banking, and PayPal for international users."
+        },
+        {
+            "question": "Are there any hidden charges or fees?",
+            "answer": "No, the course fee mentioned on the website is all-inclusive."
+        },
+        {
+            "question": "Is there a trial period before I make a payment?",
+            "answer": "Yes, we offer a free trial for select courses. Check the course page for details."
+        },
+        {
+            "question": "Can I get a refund if I don’t like the course?",
+            "answer": "Yes, we offer a 7-day money-back guarantee if the course does not meet your expectations."
+        },
+        {
+            "question": "Do you provide installment options for payments?",
+            "answer": "Yes, we offer EMI options for select courses. Check the course details for availability."
+        },
+        {
+            "question": "Will I receive an invoice for my payment?",
+            "answer": "Yes, an invoice will be sent to your registered email upon successful payment."
+        },
+        {
+            "question": "Can I pay in a different currency?",
+            "answer": "Yes, we accept payments in multiple currencies. The amount will be converted based on current exchange rates."
+        },
+        {
+            "question": "What should I do if my payment fails?",
+            "answer": "Try again after checking your payment details. If the issue persists, contact our support team."
+        },
+        {
+            "question": "Are there any discounts for bulk enrollments?",
+            "answer": "Yes, we offer discounts for group enrollments. Contact us for more details."
+        },
+        {
+            "question": "Can I change my payment method after enrolling?",
+            "answer": "No, payment methods cannot be changed once a transaction is completed."
+        }
+    ],
+    "other": [
+        {
+            "question": "Can I access courses offline?",
+            "answer": "Yes, you can download course material for offline access in the app."
+        },
+        {
+            "question": "Do you offer support for technical issues?",
+            "answer": "Yes, our technical support team is available 24/7 to assist you."
+        },
+        {
+            "question": "Are there any group learning options available?",
+            "answer": "Yes, we offer group learning sessions for teams and organizations."
+        },
+        {
+            "question": "Can I gift a course to someone?",
+            "answer": "Yes, you can gift a course by selecting the 'Gift this course' option during checkout."
+        },
+        {
+            "question": "Is there a community for students to interact?",
+            "answer": "Yes, we have a community forum where students can ask questions and share knowledge."
+        },
+        {
+            "question": "What happens if the instructor leaves the platform?",
+            "answer": "The course content remains accessible, and a new instructor may be assigned if live sessions are included."
+        },
+        {
+            "question": "How do I update my profile information?",
+            "answer": "Log in to your account and navigate to the profile section to update your details."
+        },
+        {
+            "question": "Can I request a custom course for my organization?",
+            "answer": "Yes, we create custom courses tailored to your organization’s needs. Contact us for more details."
+        },
+        {
+            "question": "What should I do if I forget my password?",
+            "answer": "Use the 'Forgot Password' option on the login page to reset your password."
+        },
+        {
+            "question": "Do you provide language options for the courses?",
+            "answer": "Yes, some courses are available in multiple languages. Check the course details for language options."
+        }
+    ]
+}
