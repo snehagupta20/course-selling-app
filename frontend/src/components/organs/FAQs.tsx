@@ -94,7 +94,7 @@ export default function FAQs(){
                 })} */}
 
             </div>
-            <YellowButton>Contact Us</YellowButton>
+            <YellowButton class="mt-4">Contact Us</YellowButton>
         </div>
     );
 };

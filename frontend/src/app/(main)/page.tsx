@@ -5,6 +5,7 @@ import MeetTeacher from "@/components/organs/MeetTeacher";
 import ReviewPage from "@/components/organs/ReviewPage";
 import GettingStarted from "@/components/organs/GettingStarted";
 import FAQs from "@/components/organs/FAQs";
+import Footer from "@/components/organs/Footer";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <ReviewPage/>
       <GettingStarted/>
       <FAQs/>
+      <Footer/>
     </>
   );
 }
