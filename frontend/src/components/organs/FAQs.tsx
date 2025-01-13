@@ -40,7 +40,7 @@ export default function FAQs(){
 
     return(
         <div className="h-[100vh] bg-light-pink-beige flex flex-col items-center justify-center mt-[20rem]" >
-            <MainHeading class="text-5xl mb-4" >Some Questions, Some Answers</MainHeading> 
+            <MainHeading class="!text-5xl mb-4" >Some Questions, Some Answers</MainHeading> 
             <GraySmallHeading class="!text-black text-lg mb-8" >Here are our most frequently asked questions</GraySmallHeading>
             <div className="bg-black rounded-xl flex p-4 mx-2 mb-4" >
                 {/* clicking tabs  */}

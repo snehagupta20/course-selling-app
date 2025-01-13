@@ -8,7 +8,7 @@ export default function GettingStarted(){
     return(
         <div className="m-4 bg-mustard-yellow flex h-max rounded-xl justify-between ">
             <div className="flex flex-col w-[50rem] p-16 my-auto ml-8 ">
-                <MainHeading class="text-5xl mb-4">Get Started Today</MainHeading>
+                <MainHeading class="!text-5xl mb-4">Get Started Today</MainHeading>
                 <GraySmallHeading class="mb-4">Unlock new opportunities and take the first step towards mastering your skills. Whether you're exploring courses, making payments, or simply looking for guidance, we're here to support you every step of the way. Dive in now and start your journey to success!</GraySmallHeading>
                 <div className="flex items-center">
                     <YellowButton class="!bg-black text-light-pink-beige mr-4">Explore Courses </YellowButton>

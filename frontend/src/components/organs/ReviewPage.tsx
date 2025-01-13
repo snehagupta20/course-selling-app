@@ -9,7 +9,7 @@ export default function ReviewPage(){
     return(
         <div className="h-[60vh] bg-beige pt-20 mt-4 p-8">
             <div className="flex justify-between">
-                <MainHeading class="text-2xl">Literally Life-Chnaging</MainHeading>
+                <MainHeading class="!text-2xl">Literally Life-Changing</MainHeading>
                 <TransparentButton>Explore Courses</TransparentButton>
             </div>
             <div>
