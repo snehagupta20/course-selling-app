@@ -6,10 +6,11 @@ import ReviewPage from "@/components/organs/ReviewPage";
 import GettingStarted from "@/components/organs/GettingStarted";
 import FAQs from "@/components/organs/FAQs";
 import Footer from "@/components/organs/Footer";
+import {AuthProvider} from "../../context/AuthContext";
 
 export default function Home() {
   return (
-    <>
+    <AuthProvider>
       <HomePage/>
       <CourseFeature/>
       <CourseSectionMain/>
@@ -18,6 +19,6 @@ export default function Home() {
       <GettingStarted/>
       <FAQs/>
       <Footer/>
-    </>
+    </AuthProvider>
   );
 }

@@ -49,3 +49,13 @@ http://localhost:8000/api/v1/user/course/:675445ffc1480d1e4af44c23
 - scrolling effect, vertical scroll
 - clicking courses, payment, others effect
 - footer template
+
+
+/*
+q1. what is createContext ?
+q2. why empty [] in useeffect?
+q3. what is useeffect?
+q4. authcontext.provider?
+q5. usecontext?
+
+*/

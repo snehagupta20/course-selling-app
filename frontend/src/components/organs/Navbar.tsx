@@ -1,12 +1,17 @@
+"use client";
+
 import Image from "next/image";
 import logo from "../../public/logo-black-2.png";
 import { MainHeading } from "../atoms/Heading";
 import { Navlink } from "../atoms/NavLinks";
 import { GrayButton, TransparentButton } from "../atoms/Button";
 import Link from "next/link";
+import {useAuth} from "../../context/AuthContext";
 
 
 export default function Navbar(){
+    const {isAuthenticated, logout} = useAuth();
+
     return(
         <div className="w-full h-[10%] bg-beige border-[1.5px] border-b-black flex justify-between p-4 " >
             <div className="flex" >
@@ -19,8 +24,13 @@ export default function Navbar(){
                     <Navlink>About</Navlink>
                     <Navlink>Courses</Navlink>
                     <Navlink>FAQs</Navlink>
-                    <Link href="\role"><GrayButton class="mx-4 mr-7" >Login / Signup</GrayButton></Link>
-                    {/* <Link href="\role"><GrayButton class="mr-8 ml-3" >Sigup</GrayButton></Link> */}
+                    {isAuthenticated ? (
+                        <GrayButton class="mx-4 mr-7" onClick={logout} >Logout</GrayButton>
+                    ) : (
+                        <Link href="\role">
+                            <GrayButton class="mx-4 mr-7" >Login / Signup</GrayButton>
+                        </Link>
+                    )}
                     <TransparentButton class="mr-2" >Cart</TransparentButton>
                 </ul>
             </div>

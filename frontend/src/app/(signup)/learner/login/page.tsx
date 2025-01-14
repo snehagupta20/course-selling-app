@@ -10,11 +10,14 @@ import { useRouter } from "next/navigation";
 import { FormEvent } from "react";
 import {useState} from "react";
 import {ErrorModal} from "../../../../components/atoms/ErrorModal";
+import { useAuth } from "../../../../context/AuthContext";
+
 
 export default function Login(){
     const [errorModal, setErrorModal] = useState<{visible : boolean; message : string}>({visible : false, message : "",});
 
     const router = useRouter();
+    const {login} = useAuth();
 
     function closeModal(){
         setErrorModal({visible : false, message : ""});
@@ -41,6 +44,8 @@ export default function Login(){
             const {token, emailId} = res.data;
             localStorage.setItem("token", `BEARER ${token}`);
             localStorage.setItem("emailId", `${emailId}`);
+
+            login(token);
 
             router.push('/');
         } catch(error : any){
