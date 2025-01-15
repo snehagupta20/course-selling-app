@@ -1,9 +1,9 @@
-import {MainHeading} from "../atoms/Heading";
-import {TransparentButton} from "../atoms/Button";
-import REVIEWS from "../../data/reviewCrad.json";
-import {ReviewCard} from "../atoms/Card"; 
-import {IconArrowLeft} from "../../public/icons/LeftArrowIcon";
-import {IconArrowRight} from "../../public/icons/RightArrowIcon";
+import {MainHeading} from "../../atoms/Heading";
+import {TransparentButton} from "../../atoms/Button";
+import REVIEWS from "../../../data/reviewCrad.json";
+import {ReviewCard} from "../../atoms/Card"; 
+import {IconArrowLeft} from "../../../public/icons/LeftArrowIcon";
+import {IconArrowRight} from "../../../public/icons/RightArrowIcon";
 
 export default function ReviewPage(){
     return(

@@ -1,9 +1,9 @@
-import { MainHeading } from "../atoms/Heading";
+import { MainHeading } from "../../atoms/Heading";
 import CourseCategory from "./CourseCategory";
 import axios from "axios";
-import {BACKEND_URL} from '../../app/config';
-import {CourseCard} from '../atoms/Card'
-import {YellowButton} from '../atoms/Button';
+import {BACKEND_URL} from '../../../app/config';
+import {CourseCard} from '../../atoms/Card'
+import {YellowButton} from '../../atoms/Button';
 
 export default async function CourseSectionMain(){
     interface Course {

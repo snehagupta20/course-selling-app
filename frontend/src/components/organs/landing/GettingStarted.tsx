@@ -1,8 +1,8 @@
-import {MainHeading , GraySmallHeading} from "../atoms/Heading";
-import {YellowButton} from "../atoms/Button";
+import {MainHeading , GraySmallHeading} from "../../atoms/Heading";
+import {YellowButton} from "../../atoms/Button";
 import Image from "next/image";
-import peopleImage from "../../public/potraits/people w yellow bg.png";
-import girlsPotrait from "../../public/potraits/get to know people.png";
+import peopleImage from "../../../public/potraits/people w yellow bg.png";
+import girlsPotrait from "../../../public/potraits/get to know people.png";
 
 export default function GettingStarted(){
     return(

@@ -158,3 +158,58 @@ export function ReviewCard(props : ReviewCardProps){
         </div>
     );
 }; 
+
+
+interface CoursePageCourseCardProps {
+    thumbnail : string,  
+    alt : string,
+    level : string,
+    title : string,
+    description : string,
+    author : string,
+    hours : string,
+    price : string,
+}
+export function CoursePageCourseCard(props : CoursePageCourseCardProps){
+    return(
+        <div className="w-[40rem] flex m-4 border-2 border-black p-4 rounded-2xl bg-beige " >
+            <div className="border border-black w-[15rem] m-4" >
+                <Image height={10} width={10} src={props.thumbnail} alt={props.alt} />
+            </div>
+            
+            <div className="m-4" >
+                <div>
+                    <GraySmallHeading>{props.level}</GraySmallHeading>
+                    <MainHeading class="font-medium" >{props.title}</MainHeading>
+                    <p className="tracking-wider" >{props.description}</p>
+                </div>
+
+                <p className="font-bold" >_______________________</p>
+
+                <div className="grid grid-cols-2 pt-4 " >
+                    <CourseCardFeature
+                        icon={<IconPerson />}
+                        title={props.author}
+                    />
+
+                    <CourseCardFeature
+                        icon={<IconClock />}
+                        title={props.hours}
+                    />
+
+                    <CourseCardFeature
+                        icon={<IconRupee />}
+                        title={props.price}
+                    />
+
+                    <CourseCardFeature
+                        class="p-[0.3rem]"
+                        icon={<IconCertificate height="1.5em" width="1.5em" />}
+                        title="Certificate"
+                    />
+
+                </div>
+            </div>
+        </div>
+    );
+};

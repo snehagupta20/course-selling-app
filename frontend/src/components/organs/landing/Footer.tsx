@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import {MainHeading} from '../atoms/Heading';
-import logo from "../../public/logo-white-2.png";
-import {FooterNavlink} from '../atoms/NavLinks';
+import {MainHeading} from '../../atoms/Heading';
+import logo from "../../../public/logo-white-2.png";
+import {FooterNavlink} from '../../atoms/NavLinks';
 
 export default function Footer() {
     return (

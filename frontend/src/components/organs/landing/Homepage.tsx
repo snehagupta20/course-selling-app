@@ -1,8 +1,8 @@
-import { MainHeading } from "../atoms/Heading";
+import { MainHeading } from "../../atoms/Heading";
 import Image from "next/image";
-import photo from "../../public/girl_using_ipad_home.avif";
-import { YellowButton } from "../atoms/Button";
-import people from "../../public/people-cirle.png";
+import photo from "../../../public/girl_using_ipad_home.avif";
+import { YellowButton } from "../../atoms/Button";
+import people from "../../../public/people-cirle.png";
 
 interface HomePageProps{
 

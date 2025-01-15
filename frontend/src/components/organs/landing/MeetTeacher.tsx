@@ -1,12 +1,10 @@
-import {YellowButton} from "../atoms/Button";
-import {BACKEND_URL} from "../../app/config";
+import {YellowButton} from "../../atoms/Button";
+import {BACKEND_URL} from "../../../app/config";
 import axios from "axios";
-import {TeacherCard} from "../atoms/Card";
-// import image from "../../public/potraits/user icon.png";
-import image from "../../public/potraits/avatar person icon - female.jpg";
-import {MainHeading} from "../atoms/Heading";
-import Slider from "react-slick";
-import svg1 from "../../public/meet your teacher/svg-4.png";
+import {TeacherCard} from "../../atoms/Card";
+import image from "../../../public/potraits/avatar person icon - female.jpg";
+import {MainHeading} from "../../atoms/Heading";
+import svg1 from "../../../public/meet your teacher/svg-4.png";
 import Image from 'next/image';
 
 

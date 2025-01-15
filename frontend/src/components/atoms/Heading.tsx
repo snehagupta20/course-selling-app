@@ -5,7 +5,7 @@ interface HeadingProps {
 
 export function MainHeading(props : HeadingProps){
     return(
-        <h1 className={` font-semibold text-xl ${props.class}`} >{props.children}</h1>
+        <h1 className={` font-bold text-2xl ${props.class}`} >{props.children}</h1>
     )
 }
 
@@ -17,7 +17,7 @@ interface SubHeadingProps {
 
 export function SubHeading(props : SubHeadingProps){
     return(
-        <h2 className={`font-bold text-xl  ${props.class}`} >{props.children}</h2>
+        <h2 className={`font-semibold text-lg  ${props.class}`} >{props.children}</h2>
     )
 };
 

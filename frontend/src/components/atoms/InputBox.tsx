@@ -1,3 +1,5 @@
+import {GraySmallHeading} from "./Heading";
+
 interface InputBoxProps{
     placeholder : string,
     class ?: string,
@@ -27,4 +29,25 @@ export function RadioButton(props : RadioButtonProps ){
             <label htmlFor={props.id} >{props.name}</label>
         </div>
     );
+}
+
+interface CheckBoxProps {
+    children : string,
+    number ?: string,
+    desc ?: string,
+}
+export function CheckBox(props : CheckBoxProps){
+    return(
+        <div className="flex flex-col mt-1 " >
+            <div className="flex items-center" >
+                <input className="mr-1 cursor-pointer " type="checkbox" id={props.children} name={props.children} value={props.children}/>
+                <label className="text-sm mr-2 cursor-pointer flex" htmlFor={props.children}>
+                    {props.children}
+                    <GraySmallHeading class="text-sm ml-2" >{props.number}</GraySmallHeading>
+                </label>
+            </div>
+            <GraySmallHeading class="text-sm" >{props.desc}</GraySmallHeading>
+            
+        </div>
+    )
 }

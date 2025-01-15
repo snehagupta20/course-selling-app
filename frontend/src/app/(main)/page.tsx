@@ -1,11 +1,11 @@
-import CourseFeature from "@/components/organs/CourseFeatures";
-import CourseSectionMain from "@/components/organs/CourseSectionMain";
-import HomePage from "@/components/organs/Homepage";
-import MeetTeacher from "@/components/organs/MeetTeacher";
-import ReviewPage from "@/components/organs/ReviewPage";
-import GettingStarted from "@/components/organs/GettingStarted";
-import FAQs from "@/components/organs/FAQs";
-import Footer from "@/components/organs/Footer";
+import CourseFeature from "@/components/organs/landing/CourseFeatures";
+import CourseSectionMain from "@/components/organs/landing/CourseSectionMain";
+import HomePage from "@/components/organs/landing/Homepage";
+import MeetTeacher from "@/components/organs/landing/MeetTeacher";
+import ReviewPage from "@/components/organs/landing/ReviewPage";
+import GettingStarted from "@/components/organs/landing/GettingStarted";
+import FAQs from "@/components/organs/landing/FAQs";
+import Footer from "@/components/organs/landing/Footer";
 import {AuthProvider} from "../../context/AuthContext";
 
 export default function Home() {

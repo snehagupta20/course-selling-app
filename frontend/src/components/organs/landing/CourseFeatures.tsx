@@ -1,6 +1,6 @@
 import IconSandClock from "@/public/icons/SandClockIcon";
-import { FeatureCard } from "../atoms/Card";
-import { MainHeading } from "../atoms/Heading";
+import { FeatureCard } from "../../atoms/Card";
+import { MainHeading } from "../../atoms/Heading";
 import IconBriefcase from "@/public/icons/BriefCaseIcon";
 import IconAssignment from "@/public/icons/AssignmentIcon";
 import IconMentor from "@/public/icons/MentorIcon";

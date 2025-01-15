@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { CategoryCard } from "../atoms/Card";
-import { MainHeading } from "../atoms/Heading";
-import { TransparentButton } from "../atoms/Button";
+import { CategoryCard } from "../../atoms/Card";
+import { MainHeading } from "../../atoms/Heading";
+import { TransparentButton } from "../../atoms/Button";
 
-import COURSECATEGORY from "../../data/courseCategory.json";
+import COURSECATEGORY from "../../../data/courseCategory.json";
 
 import IconBriefcase from "@/public/icons/BriefCaseIcon";
 import IconPaintbrush from "@/public/icons/PaintBrushIcon";

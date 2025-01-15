@@ -1,9 +1,9 @@
 "use client";
 
-import {MainHeading , GraySmallHeading , SubHeading} from "../atoms/Heading";
-import {YellowButton} from "../atoms/Button";
+import {MainHeading , GraySmallHeading , SubHeading} from "../../atoms/Heading";
+import {YellowButton} from "../../atoms/Button";
 import {useState} from "react";
-import QUESTIONS from "../../data/FAQs.json";
+import QUESTIONS from "../../../data/FAQs.json";
 
 type Category = "courses" | "payment" | "other";
 
