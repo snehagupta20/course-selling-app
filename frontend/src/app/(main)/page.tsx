@@ -1,4 +1,5 @@
 import CourseFeature from "@/components/organs/landing/CourseFeatures";
+import CourseCategory from "@/components/organs/landing/CourseCategory";
 import CourseSectionMain from "@/components/organs/landing/CourseSectionMain";
 import HomePage from "@/components/organs/landing/Homepage";
 import MeetTeacher from "@/components/organs/landing/MeetTeacher";
@@ -13,6 +14,7 @@ export default function Home() {
     <AuthProvider>
       <HomePage/>
       <CourseFeature/>
+      <CourseCategory/>
       <CourseSectionMain/>
       <MeetTeacher/>
       <ReviewPage/>

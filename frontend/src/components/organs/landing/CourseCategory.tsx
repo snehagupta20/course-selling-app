@@ -23,23 +23,26 @@ const iconMapping = {
 
 export default function CourseCategory(){
     return(
-        <div className="" >
-            <div className="flex justify-between mr-4 " >
-                <MainHeading class="!text-3xl ml-4 my-8 " >Explore courses by category.</MainHeading>
-                <TransparentButton class="items-center" >See All</TransparentButton>
+        // <div  >
+        <div className="bg-beige border-[1.5px] border-y-black flex flex-col items-center w-full p-12" >
+            <div className='w-max'>
+                <div className="flex justify-between items-center mx-5 mb-6 " >
+                    <MainHeading class="!text-3xl" >Explore courses by category.</MainHeading>
+                    <TransparentButton class="items-center" >See All</TransparentButton>
 
-            </div>
-            <div className="grid grid-cols-4 " >
+                </div>
+                <div className="grid grid-cols-4 " >
 
-                {COURSECATEGORY.CourseCategory.map((val) => {
-                    return (
-                        <CategoryCard
-                            icon={React.createElement(iconMapping[val.icon as IconName])}
-                            name={val.name}
-                        />
-                    );
-                })}
-            
+                    {COURSECATEGORY.CourseCategory.map((val) => {
+                        return (
+                            <CategoryCard
+                                icon={React.createElement(iconMapping[val.icon as IconName])}
+                                name={val.name}
+                            />
+                        );
+                    })}
+                
+                </div>
             </div>
         </div>
     )

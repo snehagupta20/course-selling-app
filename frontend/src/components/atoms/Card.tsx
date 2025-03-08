@@ -31,7 +31,7 @@ interface CategoryCardProps {
 }
 export function CategoryCard(props : CategoryCardProps){
     return(
-        <div className="bg-beige flex flex-col w-[15rem] border-2 border-black pb-10 m-4 rounded-2xl text-center items-center justify-center py-4 " >
+        <div className="bg-light-pink-beige flex flex-col w-[15rem] border-2 border-black pb-10 m-4 rounded-2xl text-center items-center justify-center py-4 " >
             <div className="rounded-full bg-black m-4 w-min p-4" >{props.icon}</div>
             <SubHeading class="!text-base font-medium" >{props.name}</SubHeading>
         </div>
