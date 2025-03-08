@@ -49,6 +49,7 @@ export default function Login(){
 
             router.push('/');
         } catch(error : any){
+            console.log("error message :", error);
             const errorMessage = error.response.data.message || "Unexpected Error"; 
             console.log("error when loggin in : ", errorMessage || error );
             // alert(error.response.data.message || error);

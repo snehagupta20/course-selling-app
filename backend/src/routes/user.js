@@ -36,7 +36,7 @@ router.post('/signup', async (req, res) => {
         { emailId : body.emailId },
     );    
     if(userExists){
-        res.status(411).json({
+        return res.status(411).json({
             message : "This Email-id alredy Exists.",
         });
     };
@@ -81,7 +81,7 @@ router.post('/login', async (req, res) => {
         })
     }
 
-    const passExsits = await Seller.findOne({
+    const passExsits = await User.findOne({
         emailId : body.emailId,
         password : body.password,
     })

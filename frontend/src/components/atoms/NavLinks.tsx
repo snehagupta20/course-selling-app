@@ -1,11 +1,12 @@
 interface NavlinkProps{
     children : React.ReactNode,
     class ?: string,
+    linkadd ?: string,
 }
  
 export function Navlink(props : NavlinkProps){
     return(
-        <li className={` text-md p-2 px-4 ${props.class}`} ><a>{props.children}</a></li>
+        <li className={` text-md p-2 px-4 ${props.class}`} ><a href={props.linkadd}>{props.children}</a></li>
     );
 };
 

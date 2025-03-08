@@ -10,7 +10,7 @@ interface HomePageProps{
 
 export default function HomePage(props : HomePageProps){
     return(
-        <div className="bg-beige flex m-auto h-[90vh] justify-between items-center  " >
+        <div id="home-page" className="bg-beige flex m-auto h-[90vh] justify-between items-center  " >
             <div className="p-4 ml-16 mx-8 w-[40%] ">
                 <MainHeading class="!text-6xl my-4" >Unlock skills. <br/> Create new life. </MainHeading>
                 <MainHeading class="!text-xl my-4 mb-8 !font-normal " >Good Course offers professionals tech courses from the leading teachers in their industries.</MainHeading>

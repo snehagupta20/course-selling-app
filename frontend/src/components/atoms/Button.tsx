@@ -27,11 +27,12 @@ interface YellowButtonProps {
     children : React.ReactNode,
     class ?: string,
     onClick ?: React.MouseEventHandler<HTMLButtonElement>
+    type ?:  React.ButtonHTMLAttributes<HTMLButtonElement>["type"] ,
 }
 
 export function YellowButton(props : YellowButtonProps){
     return(
-        <button className={`bg-mustard-yellow px-4 py-2 text-sm ${props.class}`} onClick={props.onClick} >{props.children}</button>
+        <button type={props.type} className={`bg-mustard-yellow px-4 py-2 text-sm ${props.class}`} onClick={props.onClick} >{props.children}</button>
     )
 }
 

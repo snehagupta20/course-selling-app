@@ -9,6 +9,8 @@ import axios from "axios";
 import { FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 import { ErrorModal } from "../../../../components/atoms/ErrorModal";
+import { useAuth } from "../../../../context/AuthContext";
+
 
 export default function Signup() {
     const [errorModal, setErrorModal] = useState<{ visible: boolean; message: string }>({
@@ -17,6 +19,7 @@ export default function Signup() {
     });
 
     const router = useRouter();
+    const {login} = useAuth();
 
     function closeModal() {
         setErrorModal({ visible: false, message: "" });
@@ -44,10 +47,10 @@ export default function Signup() {
             localStorage.setItem("token", `BEARER ${token}`);
             localStorage.setItem("emailId", `${emailId}`);
 
+            login(token);
             router.push("/");
         } catch (error: any) {
             const errorMessage = error.response.data.message || "Unexpected Error";
-            // console.log("Error in signing up: ", errorMessage || error);
             console.log("error message : ",errorMessage);
             setErrorModal({ visible: true, message: errorMessage });
         }

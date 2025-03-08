@@ -9,7 +9,7 @@ import IconProject from "@/public/icons/RealWorldProjectsIcon";
 
 export default function CourseFeature(){
     return(
-        <section className="bg-light-pink-beige h-[100vh] flex flex-col justify-center items-center w-full " > 
+        <section id="about-page" className="bg-light-pink-beige h-[100vh] flex flex-col justify-center items-center w-full " > 
             <MainHeading class="!text-3xl mb-8" >Undenaible quality in every course.</MainHeading>
             <div className="grid grid-cols-3">
                 <FeatureCard 

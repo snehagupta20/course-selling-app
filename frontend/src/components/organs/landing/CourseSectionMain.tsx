@@ -59,7 +59,7 @@ export default async function CourseSectionMain(){
     await fetchCourses();
 
     return(
-        <section className="bg-light-pink-beige h-[100vh] flex flex-col items-center" >
+        <section id="courses-page" className="bg-light-pink-beige h-[100vh] flex flex-col items-center" >
             <CourseCategory/>
             <MainHeading class="mt-8 text-4xl" >Learn & Build.</MainHeading>
             <div className="flex flex-col m-4" >
